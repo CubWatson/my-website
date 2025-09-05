@@ -7,6 +7,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: 'https://cubwatson.github.io',
-  base: '/my-website',
+  site: 'https://cubwatson.com',
 });
