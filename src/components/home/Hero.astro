@@ -9,7 +9,7 @@ const { data: config } = await getConfigurationCollection();
     <img
       src={config.hero.image}
       alt={`${config.hero.title} Profile Image`}
-      class="w-full h-full object-cover object-center transform scale-140"
+      class="w-full h-full object-cover object-center transform scale-140 sepia hue-rotate-[190deg] saturate-150 brightness-110 contrast-110 drop-shadow"
     />
   </div>
   <div>
