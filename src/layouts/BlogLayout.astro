@@ -38,7 +38,7 @@ const { data: config } = await getConfigurationCollection();
       property="og:url"
       content={`${config.site.baseUrl}/blog/${frontmatter.slug}`}
     />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content={`${frontmatter.title} • ${config.personal.name}`}

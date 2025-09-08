@@ -39,7 +39,7 @@ const featuredArticles = (await getCollection("blog", (e) => e.data.featured)).m
       <meta property="og:image" content={config.globalMeta.cardImage} />
     )}
     <meta property="og:url" content={config.site.baseUrl} />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={config.globalMeta.title} />
     <meta
       name="twitter:description"
