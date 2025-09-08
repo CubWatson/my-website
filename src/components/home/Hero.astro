@@ -5,11 +5,11 @@ const { data: config } = await getConfigurationCollection();
 ---
 
 <div class="flex flex-col items-center sm:flex-row gap-8">
-  <div class="size-40 aspect-square rounded-full overflow-hidden mb-4 z-0">
+  <div class="w-40 h-40 rounded-full overflow-hidden mb-4 z-0 flex-none">
     <img
       src={config.hero.image}
       alt={`${config.hero.title} Profile Image`}
-      class="block w-full h-full object-cover object-center transform scale-140 sepia hue-rotate-[190deg] saturate-150 brightness-110 contrast-110 drop-shadow"
+      class="block w-full h-full object-cover object-center scale-[1.4] sepia hue-rotate-[190deg] saturate-150 brightness-110 contrast-110 drop-shadow"
     />
   </div>
   <div>
