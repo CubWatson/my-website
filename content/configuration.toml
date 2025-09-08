@@ -8,39 +8,39 @@ baseUrl = "https://cubwatson.com"
 title = "CubWatson"
 description = "Retro-Inspired Theme & Built for Astro"
 longDescription = "Zaggonaut is a retro-inspired theme for Astro, built using TypeScript, TailwindCSS, and Astro."
-cardImage = "https://cubwatson.com/pfp-kevin.jpeg"
+cardImage = "https://cubwatson.com/pfp-kevin.webp"
 keywords = ["web development", "design", "technology"]
 
 [_.blogMeta]
 title = "CubWatson Blog"
 description = "Practical wisdom, unfiltered thoughts, and hot takes."
 longDescription = "Web development, tech trends, and the occasional programming mishap."
-cardImage = "https://cubwatson.com/pfp-kevin.jpeg"
+cardImage = "https://cubwatson.com/pfp-kevin.webp"
 keywords = ["web development", "design", "technology"]
 
 [_.projectMeta]
 title = "CubWatson Projects"
 description = "A list of my web development projects and developer tools."
 longDescription = "All of my projects, including both frontend and full-stack applications."
-cardImage = "https://cubwatson.com/pfp-kevin.jpeg"
+cardImage = "https://cubwatson.com/pfp-kevin.webp"
 keywords = ["web development", "design", "technology"]
 
 [_.notFoundMeta]
 title = "CubWatson 404"
 description = "The page you are looking for does not exist."
 longDescription = "The page you are looking for does not exist. Maybe it never existed. Spooky."
-cardImage = "https://cubwatson.com/pfp-kevin.jpeg"
+cardImage = "https://cubwatson.com/pfp-kevin.webp"
 
 [_.hero]
 title = "CubWatson"
 subtitle = "Retro-Inspired Theme &<br />Built for Astro"
-image = "https://cubwatson.com/pfp-kevin.jpeg"
+image = "https://cubwatson.com/pfp-kevin.webp"
 ctaText = "View Projects"
 ctaUrl = "/projects"
 
 [_.personal]
 name = "CubWatson"
-githubProfile = "https://github.com/RATIU5/zaggonaut"
+githubProfile = "https://github.com/CubWatson"
 twitterProfile = "https://twitter.com"
 linkedinProfile = "https://linkedin.com/"
 
