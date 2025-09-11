@@ -3,7 +3,7 @@ import { getConfigurationCollection } from "../../lib/utils";
 
 const { data: config } = await getConfigurationCollection();
 const title = config.hero.title ?? "";
-const hasLeadingUnderscore = title.startsWith("_");
+const hasLeadingUnderscore = title.startsWith("█");
 const restTitle = hasLeadingUnderscore ? title.slice(1).trimStart() : title;
 ---
 
@@ -17,7 +17,7 @@ const restTitle = hasLeadingUnderscore ? title.slice(1).trimStart() : title;
       class="text-3xl sm:text-4xl font-display font-semibold opsz text-center sm:text-left"
     >
       {hasLeadingUnderscore && (
-        <span aria-hidden="true" class="inline-block blink-cursor">▮</span>
+        <span aria-hidden="true" class="inline-block blink-cursor">█</span>
       )}{restTitle}
     </h1>
     <h2
