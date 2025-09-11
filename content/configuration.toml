@@ -32,7 +32,7 @@ longDescription = "The page you are looking for does not exist. Maybe it never e
 cardImage = "https://cubwatson.com/pfp-kevin.webp"
 
 [_.hero]
-title = "Kevin"
+title = "_Kevin"
 subtitle = "Yep, it's me!"
 image = "https://cubwatson.com/pfp-kevin.webp"
 ctaText = "View Projects"
