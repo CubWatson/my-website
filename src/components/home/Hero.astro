@@ -3,10 +3,8 @@ import { getConfigurationCollection } from "../../lib/utils";
 
 const { data: config } = await getConfigurationCollection();
 const title = config.hero.title ?? "";
-const blinkedTitle = title.replaceAll(
-  "_",
-  '<span aria-hidden="true" class="inline-block blink-cursor">_</span>'
-);
+const hasTrailingUnderscore = title.endsWith("_");
+const restTitle = hasTrailingUnderscore ? title.slice(0, -1).trimEnd() : title;
 ---
 
 <div class="flex flex-col items-center sm:flex-row gap-8">
@@ -18,7 +16,9 @@ const blinkedTitle = title.replaceAll(
     <h1
       class="text-3xl sm:text-4xl font-display font-semibold opsz text-center sm:text-left"
     >
-      <span set:html={blinkedTitle} />
+      {restTitle}{hasTrailingUnderscore && (
+        <span aria-hidden="true" class="inline-block blink-cursor">_</span>
+      )}
     </h1>
     <h2
       class="text-center text-xl sm:text-2xl font-mono font-medium sm:text-left"
