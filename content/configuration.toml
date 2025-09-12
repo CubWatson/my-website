@@ -6,8 +6,8 @@ baseUrl = "https://cubwatson.com"
 
 [_.globalMeta]
 title = "Kevin's Website"
-description = "Retro-Inspired Theme & Built for Astro"
-longDescription = "Zaggonaut is a retro-inspired theme for Astro, built using TypeScript, TailwindCSS, and Astro."
+description = "My personal website and portfolio."
+longDescription = "This is my personal website where I share my projects and accomplishments."
 cardImage = "https://cubwatson.com/pfp-kevin.webp"
 keywords = ["web development", "design", "technology"]
 
