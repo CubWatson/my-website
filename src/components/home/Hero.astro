@@ -3,8 +3,10 @@ import { getConfigurationCollection } from "../../lib/utils";
 
 const { data: config } = await getConfigurationCollection();
 const title = config.hero.title ?? "";
-const hasLeadingUnderscore = title.startsWith("_");
-const restTitle = hasLeadingUnderscore ? title.slice(1).trimStart() : title;
+const blinkedTitle = title.replaceAll(
+  "_",
+  '<span aria-hidden="true" class="inline-block blink-cursor">_</span>'
+);
 ---
 
 <div class="flex flex-col items-center sm:flex-row gap-8">
@@ -16,9 +18,7 @@ const restTitle = hasLeadingUnderscore ? title.slice(1).trimStart() : title;
     <h1
       class="text-3xl sm:text-4xl font-display font-semibold opsz text-center sm:text-left"
     >
-      {hasLeadingUnderscore && (
-        <span aria-hidden="true" class="inline-block blink-cursor">_</span>
-      )}{restTitle}
+      <span set:html={blinkedTitle} />
     </h1>
     <h2
       class="text-center text-xl sm:text-2xl font-mono font-medium sm:text-left"
